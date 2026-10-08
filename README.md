@@ -25,7 +25,7 @@ Oracle VirtualBox with Bridged Networking (3 VMs total - each with 2GB RAM and 2
 4. Verified communication between VMs via ping
 ![Ping works. Connection confirmed](images/ping.png)
 5. Configured Firewall settings on the Linux server to enable SSH and http to ensure the ticketing site is reachable.
-![Firewall configured to allow SSH and HTTTP](images/ufwsetup.png) 
+![Firewall configured to allow SSH and HTTP](images/ufwsetup.png) 
 6. Logged into the Linux Server from the Windows host via SSH. Downloaded the following packages to set up ticketing system: 
         - Apache - web server
         - MariaDB - database server
@@ -77,5 +77,5 @@ My fictional company "abccorp" now has a working ticketing system accessible via
 ### Next Steps 
 1. Set up HTTPS
 2. Set up a backup script
-3. Automate onboarding with PowerShell# HomeLab-Ticketing-Server
-Documentation for setting up an osTicket server in my AD HomeLab
+3. Automate onboarding with PowerShell
+
