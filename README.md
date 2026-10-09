@@ -8,11 +8,12 @@ I mapped a shared network drive to easily share screenshots between multiple dev
 ![Mapping the Network Drive](images/mapping-network-drive.png)
 
 ### Environment 
-Ubuntu Server 26.04.1
-osTicket 
-PHP (8.5.4)
-MariaDB
-Oracle VirtualBox with Bridged Networking (3 VMs total - each with 2GB RAM and 20GB disk space)
+- Ubuntu Server 26.04.1
+- osTicket 1.18.4
+- PHP 8.5.4
+- MariaDB 11.8.6
+- Apache2 2.4.66
+- Oracle VirtualBox with Bridged Networking (3 VMs total - each with 2GB RAM and 20GB disk space)
 
 ### Set Up
 
@@ -27,7 +28,7 @@ Oracle VirtualBox with Bridged Networking (3 VMs total - each with 2GB RAM and 2
 5. Configured Firewall settings on the Linux server to enable SSH and http to ensure the ticketing site is reachable.
 ![Firewall configured to allow SSH and HTTP](images/ufwsetup.png) 
 6. Logged into the Linux Server from the Windows host via SSH. Downloaded the following packages to set up ticketing system: 
-        - Apache - web server
+        - Apache2 - web server
         - MariaDB - database server
         - PHP - programming language for osTicket
         - libapache2-mod-php - module to connect Apache to PHP
